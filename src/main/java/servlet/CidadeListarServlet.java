@@ -47,7 +47,7 @@ public class CidadeListarServlet extends HttpServlet {
             out.println("<h1>Pesquisa de Cidades</h1>");
             out.println("Cidades:<br>");
             for(Cidade c:ejb.listar()){
-                out.println(c.getDescricao());  
+                out.println(c.getId()+" - "+c.getDescricao());  
                 out.println("<br>");
             }
             
